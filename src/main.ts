@@ -15,7 +15,7 @@ class Main {
 
   start(): void {
     this.app.use(this.router.getRoutes());
-    this.app.listen(3000, () => console.log("Server is running"));
+    this.app.listen(process.env.PORT, () => console.log(`Server listening on port ${process.env.PORT}!`));
   }
 }
 
