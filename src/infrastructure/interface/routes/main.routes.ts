@@ -9,7 +9,7 @@ class MainRoutes {
     @inject("MainController") private mainController: MainController,
   ) {
     this.router = ExpressRouter();
-    this.router.get("/", this.mainController.getHello.bind(this.mainController));
+    this.router.get("/say-hello", this.mainController.getHello.bind(this.mainController));
   }
 
   public getRoutes(): ExpressRouter {

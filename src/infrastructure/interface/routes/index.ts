@@ -13,7 +13,7 @@ class Routes  {
   }
 
   public getRoutes(): ExpressRouter {
-    this.Router.use('/say-hello', this.mainRoutes.getRoutes());
+    this.Router.use('/main', this.mainRoutes.getRoutes());
     return this.Router;
   }
 }
